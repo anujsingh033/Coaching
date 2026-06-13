@@ -14,9 +14,7 @@
             </div>
           </div>
           <p class="max-w-sm text-sm leading-7 text-slate-600 dark:text-slate-400">Mentor-led classrooms, adaptive tests, doubt support, and result-focused academic planning for school and competitive exam aspirants.</p>
-          <div class="mt-5 flex gap-2">
-            ${["facebook", "instagram", "youtube", "linkedin"].map((icon) => `<a class="icon-btn" href="#" aria-label="${icon}"><i data-lucide="${icon}" class="h-5 w-5"></i></a>`).join("")}
-          </div>
+          
         </div>
         <div>
           <h3 class="mb-4 font-black dark:text-slate-100">Quick Links</h3>
