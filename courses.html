@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses | Achievers Coaching Institute</title>
+  <meta name="description" content="Explore IIT-JEE, NEET, UPSC, SSC, Banking, Railway and Foundation coaching courses with filters and course details.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:"class"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="site-navbar"></div>
+  <main id="main" class="pt-28">
+    <section class="section-pad">
+      <div class="container-pad">
+        <p class="eyebrow">Courses</p>
+        <h1 class="section-title mt-4" data-text-reveal>Choose the course that matches your exam goal.</h1>
+        <p class="section-copy mt-5">Filter by category, search programs and open quick details for batch structure, testing and mentorship.</p>
+        <div class="mt-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between" data-filter-group="[data-course-card]" data-search="#course-search">
+          <div class="flex flex-wrap gap-2">
+            <button class="filter-btn active rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="all" type="button">All</button>
+            <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="jee" type="button">IIT-JEE</button>
+            <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="neet" type="button">NEET</button>
+            <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="upsc" type="button">UPSC</button>
+            <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="ssc" type="button">SSC</button>
+            <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="banking" type="button">Banking</button>
+            <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="railway" type="button">Railway</button>
+            <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="foundation" type="button">Foundation</button>
+          </div>
+          <label class="relative block lg:w-80">
+            <i data-lucide="search" class="absolute left-4 top-3.5 h-5 w-5 text-slate-400"></i>
+            <input id="course-search" class="w-full rounded-xl border border-slate-200 bg-white py-3 pl-12 pr-4 dark:border-slate-700 dark:bg-slate-900" placeholder="Search courses">
+          </label>
+        </div>
+        <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="premium-card p-6" data-category="jee foundation" data-course-card data-title="IIT-JEE Two Year Classroom" data-detail="Two year integrated Main and Advanced preparation with daily practice, weekly tests and doubt clinics." data-motion-card data-reveal><i data-lucide="atom" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">IIT-JEE Two Year Classroom</h2><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">Class 11 to Advanced track.</p><button class="btn-secondary mt-5 px-4" data-course-detail type="button">View Details</button></article>
+          <article class="premium-card p-6" data-category="jee" data-course-card data-title="JEE Advanced Rank Booster" data-detail="Intensive problem-solving, previous year analysis and advanced mock tests for final stage aspirants." data-motion-card data-reveal><i data-lucide="rocket" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">JEE Advanced Rank Booster</h2><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">High rigor revision batch.</p><button class="btn-secondary mt-5 px-4" data-course-detail type="button">View Details</button></article>
+          <article class="premium-card p-6" data-category="neet" data-course-card data-title="NEET Complete Program" data-detail="NCERT mastery, biology diagrams, physics numericals and chemistry drills with full-length mocks." data-motion-card data-reveal><i data-lucide="heart-pulse" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">NEET Complete Program</h2><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">Medical entrance preparation.</p><button class="btn-secondary mt-5 px-4" data-course-detail type="button">View Details</button></article>
+          <article class="premium-card p-6" data-category="upsc" data-course-card data-title="UPSC Foundation and Mains" data-detail="GS foundation, current affairs, answer writing, optional mentorship and interview preparation." data-motion-card data-reveal><i data-lucide="landmark" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">UPSC Foundation and Mains</h2><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">Prelims to interview support.</p><button class="btn-secondary mt-5 px-4" data-course-detail type="button">View Details</button></article>
+          <article class="premium-card p-6" data-category="ssc" data-course-card data-title="SSC CGL and CHSL" data-detail="Quant, reasoning, English, general awareness, speed drills and tier-wise mock tests." data-motion-card data-reveal><i data-lucide="file-check-2" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">SSC CGL and CHSL</h2><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">Government exam track.</p><button class="btn-secondary mt-5 px-4" data-course-detail type="button">View Details</button></article>
+          <article class="premium-card p-6" data-category="banking" data-course-card data-title="Banking PO and Clerk" data-detail="Quantitative aptitude, reasoning, English, banking awareness, interview and group exercise prep." data-motion-card data-reveal><i data-lucide="badge-indian-rupee" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">Banking PO and Clerk</h2><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">IBPS, SBI and RBI assistant.</p><button class="btn-secondary mt-5 px-4" data-course-detail type="button">View Details</button></article>
+          <article class="premium-card p-6" data-category="railway" data-course-card data-title="Railway Exams" data-detail="RRB NTPC, Group D and ALP preparation with syllabus coverage and computer-based test practice." data-motion-card data-reveal><i data-lucide="train-front" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">Railway Exams</h2><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">RRB-focused batches.</p><button class="btn-secondary mt-5 px-4" data-course-detail type="button">View Details</button></article>
+          <article class="premium-card p-6" data-category="foundation" data-course-card data-title="Foundation Courses" data-detail="Class 8 to 10 science, maths and olympiad foundation with concept clarity and study habits." data-motion-card data-reveal><i data-lucide="book-open-check" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">Foundation Courses</h2><p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">Early competitive readiness.</p><button class="btn-secondary mt-5 px-4" data-course-detail type="button">View Details</button></article>
+        </div>
+      </div>
+    </section>
+    <div class="modal-backdrop" data-course-modal>
+      <div class="premium-card w-full max-w-xl p-6" role="dialog" aria-modal="true" aria-label="Course detail">
+        <div class="mb-4 flex items-center justify-between"><h2 class="text-2xl font-black dark:text-slate-100" data-modal-title>Course</h2><button class="icon-btn" type="button" data-close-modal aria-label="Close course detail"><i data-lucide="x" class="h-5 w-5"></i></button></div>
+        <p class="leading-8 text-slate-600 dark:text-slate-300" data-modal-body></p>
+        <button class="btn-primary mt-6 px-5" type="button" data-open-callback>Get Fee Details</button>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="assets/js/main.js?v=20260612"></script>
+</body>
+</html>

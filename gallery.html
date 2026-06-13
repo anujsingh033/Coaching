@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Achievers Coaching Institute</title>
+  <meta name="description" content="Explore campus, events, seminars, classrooms and workshop images in a filterable masonry gallery.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:"class"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="site-navbar"></div>
+  <main id="main" class="pt-28">
+    <section class="section-pad">
+      <div class="container-pad">
+        <p class="eyebrow">Gallery</p>
+        <h1 class="section-title mt-4" data-text-reveal>Inside our classrooms, events and learning culture.</h1>
+        <div class="mt-8 flex flex-wrap gap-2" data-filter-group="[data-gallery-item]">
+          <button class="filter-btn active rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="all" type="button">All</button>
+          <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="campus" type="button">Campus</button>
+          <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="events" type="button">Events</button>
+          <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="seminars" type="button">Seminars</button>
+          <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="classrooms" type="button">Classrooms</button>
+          <button class="filter-btn rounded-xl border border-slate-200 px-4 py-2 font-black dark:border-slate-700" data-filter="workshops" type="button">Workshops</button>
+        </div>
+        <div class="masonry mt-8">
+          <button class="masonry-item media-card w-full text-left" data-category="campus" data-gallery-item data-lightbox-src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=82"><img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80" alt="Campus building" loading="lazy"></button>
+          <button class="masonry-item media-card min-h-[24rem] w-full text-left" data-category="classrooms" data-gallery-item data-lightbox-src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=82"><img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" alt="Classroom session" loading="lazy"></button>
+          <button class="masonry-item media-card w-full text-left" data-category="seminars" data-gallery-item data-lightbox-src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=82"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80" alt="Student seminar" loading="lazy"></button>
+          <button class="masonry-item media-card min-h-[26rem] w-full text-left" data-category="events" data-gallery-item data-lightbox-src="https://images.unsplash.com/photo-1515169067865-5387ec356754?auto=format&fit=crop&w=1200&q=82"><img src="https://images.unsplash.com/photo-1515169067865-5387ec356754?auto=format&fit=crop&w=800&q=80" alt="Institute event" loading="lazy"></button>
+          <button class="masonry-item media-card w-full text-left" data-category="workshops" data-gallery-item data-lightbox-src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=82"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" alt="Workshop discussion" loading="lazy"></button>
+          <button class="masonry-item media-card min-h-[24rem] w-full text-left" data-category="campus classrooms" data-gallery-item data-lightbox-src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=82"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Modern study space" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+    <div class="lightbox-backdrop" data-lightbox><img class="max-h-[88vh] max-w-[92vw] rounded-2xl object-contain" src="" alt="Expanded gallery item"></div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="assets/js/main.js?v=20260612"></script>
+</body>
+</html>

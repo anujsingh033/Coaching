@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Portal | Achievers Coaching Institute</title>
+  <meta name="description" content="Student portal landing page with login, dashboard preview, study material preview and test series preview.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:"class"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="site-navbar"></div>
+  <main id="main" class="pt-28">
+    <section class="section-pad">
+      <div class="container-pad grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+        <form class="premium-card p-6" data-lead-form data-reveal>
+          <p class="eyebrow">Student Portal</p>
+          <h1 class="mt-4 text-3xl font-black dark:text-slate-100">Login to your learning dashboard</h1>
+          <input class="mt-5 w-full rounded-xl border border-slate-200 px-4 py-3 dark:border-slate-700 dark:bg-slate-900" type="email" placeholder="Student email" required>
+          <div class="relative mt-3">
+            <input id="portal-password" class="w-full rounded-xl border border-slate-200 px-4 py-3 pr-12 dark:border-slate-700 dark:bg-slate-900" type="password" placeholder="Password" required>
+            <button class="absolute right-2 top-2 icon-btn h-9 w-9 min-h-0" type="button" data-password-toggle="#portal-password" aria-label="Toggle password visibility"><i data-lucide="eye" class="h-4 w-4"></i></button>
+          </div>
+          <button class="btn-primary mt-5 w-full px-5" type="submit">Login</button>
+          <p class="hidden mt-3 rounded-xl bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-700" data-form-success>Demo login submitted.</p>
+        </form>
+        <div data-reveal>
+          <h2 class="section-title" data-text-reveal>Everything students need after class.</h2>
+          <p class="section-copy mt-5">Preview attendance, homework, test performance, lecture recordings and study material from one clean dashboard.</p>
+          <div class="mt-8 premium-card overflow-hidden p-5" data-motion-card>
+            <div class="rounded-2xl bg-slate-950 p-5 text-white">
+              <div class="flex items-center justify-between"><p class="font-black">Dashboard Preview</p><span class="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-black text-emerald-300">Live</span></div>
+              <div class="mt-5 grid gap-4 md:grid-cols-3">
+                <div class="rounded-xl bg-white/10 p-4"><p class="text-sm text-slate-300">Next Test</p><p class="mt-2 text-xl font-black">Physics Mock</p></div>
+                <div class="rounded-xl bg-white/10 p-4"><p class="text-sm text-slate-300">Study Material</p><p class="mt-2 text-xl font-black">128 Files</p></div>
+                <div class="rounded-xl bg-white/10 p-4"><p class="text-sm text-slate-300">Attendance</p><p class="mt-2 text-xl font-black">96%</p></div>
+              </div>
+              <div class="mt-5 rounded-xl bg-white/10 p-4">
+                <div class="mb-2 flex justify-between text-sm"><span>Overall Progress</span><span>74%</span></div>
+                <div class="h-3 rounded-full bg-white/10"><div class="h-3 w-[74%] rounded-full bg-blue-400"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad bg-white/70 dark:bg-slate-950/40">
+      <div class="container-pad grid gap-5 md:grid-cols-3">
+        <article class="premium-card p-6" data-motion-card data-reveal><i data-lucide="book-open" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">Study Material</h2><p class="mt-3 text-slate-600 dark:text-slate-400">Chapter notes, DPPs, formulas, recorded lectures and answer keys.</p></article>
+        <article class="premium-card p-6" data-motion-card data-reveal><i data-lucide="clipboard-check" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">Test Series</h2><p class="mt-3 text-slate-600 dark:text-slate-400">Full-length tests, topic tests, ranking and improvement analytics.</p></article>
+        <article class="premium-card p-6" data-motion-card data-reveal><i data-lucide="message-square-text" class="h-9 w-9 text-blue-600"></i><h2 class="mt-5 text-xl font-black dark:text-slate-100">Doubt Support</h2><p class="mt-3 text-slate-600 dark:text-slate-400">Submit doubts, track resolution and attend doubt-clearing rooms.</p></article>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="assets/js/main.js?v=20260612"></script>
+</body>
+</html>
